@@ -1,6 +1,6 @@
 = System Metrics
 
-System Metrics is a Rails 3 Engine that provides a clean web interface to the performance metrics instrumented with `ActiveSupport::Notifications`. It'll collect and display the notifications baked into Rails and any additional custom ones you add using `ActiveSupport::Notification#instrument`.
+System Metrics is a Rails Engine (Supports rails 3 & greater ) that provides a clean web interface to the performance metrics instrumented with `ActiveSupport::Notifications`. It'll collect and display the notifications baked into Rails and any additional custom ones you add using `ActiveSupport::Notification#instrument`.
 
 System Metrics is not intended to be a replacement for performance monitoring solutions such as {New Relic}[http://newrelic.com/]. However, it is especially handy for quickly identifying performance problems in a development environment. It's also a great alternative for private networks disconnected from the Internet.
 

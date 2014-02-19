@@ -2,7 +2,7 @@ module SystemMetrics
   class Metric < ActiveRecord::Base
     attr_accessible :name, :payload, :transaction_id, :duration, :action, :category, :children, :exclusive_duration, :started_at, :request_id, :parent_id
 
-    set_table_name 'system_metrics'
+    self.table_name ='system_metrics'
     has_many :children, :class_name => self.name, :foreign_key => :parent_id
     belongs_to :parent, :class_name => self.name
     serialize :payload

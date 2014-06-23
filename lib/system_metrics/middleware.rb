@@ -1,7 +1,6 @@
 module SystemMetrics
   class Middleware
     def initialize(app, collector, path_exclude_patterns)
-      p "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
       @app = app
       @collector = collector
       @path_exclude_patterns = path_exclude_patterns

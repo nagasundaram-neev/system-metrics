@@ -50,6 +50,7 @@ module SystemMetrics
       end
 
       def create_metric(event, merge_params={})
+        p "$$$$$$$$$$$$$$$$$$$$"
         SystemMetrics::Metric.create(event.to_hash.merge(merge_params))
       end
 

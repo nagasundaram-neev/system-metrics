@@ -19,6 +19,7 @@ module SystemMetrics
       end
 
       def create_metric(event, merge_params={})
+        p "_-_-_-_-_-__-_-_-_-_-__-_-_-_-_-__-_-_-_-_-_"
         SystemMetrics::Metric.create(event.to_hash.merge(merge_params))
       end
 

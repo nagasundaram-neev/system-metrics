@@ -4,6 +4,10 @@ module SystemMetrics
       @app = app
       @collector = collector
       @path_exclude_patterns = path_exclude_patterns
+      p "________________________________"
+      p @app
+      p @collector
+      p "________________________________"
     end
 
     def call(env)
